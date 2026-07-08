@@ -1,0 +1,22 @@
+{
+  "short_name": "MyHelth",
+  "name": "My.Helth",
+  "description": "Приложение для отслеживания и напоминаний о приёме лекарств.",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "theme_color": "#2A7B9B",
+  "background_color": "#F4F9FD"
+}

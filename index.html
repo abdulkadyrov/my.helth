@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2A7B9B">
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>My.Helth</title>
+</head>
+<body>
+  <header>
+    <h1>My.Helth</h1>
+  </header>
+  <main>
+    <!-- Form for adding or editing medication -->
+    <section id="form-section">
+      <h2>Добавить или редактировать лекарство</h2>
+      <form id="med-form" autocomplete="off">
+        <div class="form-group">
+          <label for="medName">Название</label>
+          <input type="text" id="medName" required placeholder="Например, Бестфертил">
+        </div>
+        <div class="form-group">
+          <label for="medDose">Доза</label>
+          <input type="text" id="medDose" required placeholder="Например, 2 утром, 2 ночью">
+        </div>
+        <div class="form-group">
+          <label for="medTimes">Время приёма (через запятую)</label>
+          <input type="text" id="medTimes" required placeholder="08:00, 20:00">
+        </div>
+        <div class="form-group">
+          <label for="startDate">Начало приёма</label>
+          <input type="date" id="startDate" required>
+        </div>
+        <div class="form-group">
+          <label for="endDate">Конец приёма (опционально)</label>
+          <input type="date" id="endDate">
+        </div>
+        <div class="buttons">
+          <button type="submit" id="saveBtn">Сохранить</button>
+          <button type="button" id="cancelEdit" style="display:none;">Отмена</button>
+        </div>
+      </form>
+    </section>
+    <!-- List of medications -->
+    <section id="med-list-section">
+      <h2>Ваши лекарства</h2>
+      <ul id="med-list"></ul>
+    </section>
+    <!-- Checklist for today -->
+    <section id="today-section">
+      <h2>Чек‑лист на сегодня</h2>
+      <ul id="today-list"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 My.Helth</p>
+  </footer>
+  <!-- Main app script -->
+  <script src="script.js"></script>
+</body>
+</html>
